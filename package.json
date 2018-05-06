@@ -1,7 +1,7 @@
 {
   "name": "language-emv",
   "main": "./lib/language-emv",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "A proprietary markup language used in HTML documents",
   "keywords": [],
   "activationCommands": {
