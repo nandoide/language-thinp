@@ -1,14 +1,14 @@
 {
-  "name": "language-emv",
-  "main": "./lib/language-emv",
+  "name": "language-thinp",
+  "main": "./lib/language-thinp",
   "version": "0.1.0",
-  "description": "A proprietary markup language used in HTML documents",
+  "description": "A proprietary simple language for thinp music composer",
   "keywords": [
   ],
   "activationCommands": {
-    "atom-workspace": "language-emv:toggle"
+    "atom-workspace": "language-thinp:toggle"
   },
-  "repository": "https://github.com/DamnedScholar/language-emv",
+  "repository": "https://github.com/nandoide/language-thinp",
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
