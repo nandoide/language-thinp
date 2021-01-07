@@ -1,9 +1,8 @@
-scopeName: 'text.html.emv'
+scopeName: 'text.html.thp'
 name: 'EMV'
 fileTypes: [
-  'html'
-  'htm'
-  'emv'
+  'thp'
+  'trk'
 ]
 patterns: [
   {
