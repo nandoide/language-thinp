@@ -13,11 +13,11 @@ patterns: [
     match: '^#.*$'
   }
   {
-      match: '(U|F|G|H|I|L|M|N|O|S|T|V|W|D|B|\\:|#)'
+      match: '(U|F|G|H|I|J|L|M|N|O|P|S|T|V|W|D|B|\\:|#)'
       name: 'constant.numeric'
   }
   {
-      match: '(,|=|^) *(k|s|c|v|o|t|l|b|e|d|x|a|%){1} *'
+      match: '(,|=|^) *(k|s|c|v|o|t|l|b|e|d|x|a|i|w|%){1} *'
       captures:
         0: name: 'keyword'
         1: name: 'storage.type.function'
