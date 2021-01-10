@@ -17,23 +17,31 @@ patterns: [
       name: 'constant.numeric'
   }
   {
-      match: '(,|=|^) *(k|s|c|v|o|t|l|b|e|d|x|a|i|w|%){1} *'
+      match: '(,|=|^) *(k|s|c|v|o|t|l|b|p|d|x|a|i|w|f|%){1} *'
       captures:
         0: name: 'keyword'
         1: name: 'storage.type.function'
   }
   {
-      match: '(\\.|\\+|-)'
-      name: 'string.quoted'
+      match: '([a-zA-Z0-9_]+)\\s*='
+      captures:
+        1: name: 'variable.other.object.property'
+        0: name: 'constant.language'
   }
   {
-      match: '([a-zA-Z0-9_]+) *='
-      captures:
-        1: name: 'support.function'
-        0: name: 'storage.type.function'
+      match: '(\\.|\\+|-|&|\\|)'
+      name: 'string.quoted'
   }
   {
       match: '@[a-zA-Z0-9_]+'
       name: 'support.function'
+  }
+  {
+      match: '\\$[a-zA-Z0-9_]+'
+      name: 'constant.language'
+  }
+  {
+      match: '='
+      name: 'constant.language'
   }
 ]
