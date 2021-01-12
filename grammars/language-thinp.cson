@@ -23,6 +23,13 @@ patterns: [
         1: name: 'storage.type.function'
   }
   {
+      match: '(,|=|^) *(m){1}(g|r|w|p|e|v|m){0,1} *'
+      captures:
+        2: name: 'keyword'
+        0: name: 'constant.language'
+        1: name: 'storage.type.function'
+  }
+  {
       match: '([a-zA-Z0-9_]+)\\s*='
       captures:
         1: name: 'variable.other.object.property'
