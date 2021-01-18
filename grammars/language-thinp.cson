@@ -13,17 +13,23 @@ patterns: [
     match: '^#.*$'
   }
   {
+      match: '(,|=|^) *(n)([A-Z]{1})'
+      captures:
+        2: name: 'keyword'
+        3: name: 'constant.numeric'
+  }
+  {
       match: '(U|F|G|H|I|J|L|M|N|O|P|S|T|V|W|D|B|\\:|#)'
       name: 'constant.numeric'
   }
   {
-      match: '(,|=|^) *(k|s|c|v|o|t|l|b|p|d|x|a|i|w|f|%){1} *'
+      match: '(,|=|^) *(k|s|c|v|o|t|l|b|p|d|x|a|i|w|f|n|%){1} *'
       captures:
         0: name: 'keyword'
         1: name: 'storage.type.function'
   }
   {
-      match: '(,|=|^) *(m){1}(g|r|w|p|e|v|m){0,1} *'
+      match: '(,|=|^) *(m){1}(g|r|w|p|e|v|m|a|c){0,1} *'
       captures:
         2: name: 'keyword'
         0: name: 'constant.language'
